@@ -134,6 +134,7 @@
     color: var(--text-color, #cbd5e1);
     margin-bottom: 1.5rem;
     white-space: pre-wrap;
+    text-align: justify;
 }
 
 .action-buttons {

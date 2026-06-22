@@ -21,9 +21,11 @@ export const PROJECTS = [
     title: 'CostCalculator',
     tech: 'Java, JavaFX, SceneBuilder',
     shortDescription: 'Asztali alkalmazás, amely a költségek nyomon követését és elemzését segíti',
-    longDescription: 'Ez az asztali alkalmazás lehetővé teszi a felhasználók számára, hogy nyomon kövessék és elemezzék a költségeiket. A CostCalculator segítségével a felhasználók könnyedén rögzíthetik a kiadásaikat, kategorizálhatják azokat és különböző grafikonokon és jelentéseken keresztül elemezhetik a pénzügyi helyzetüket. Az alkalmazás célja, hogy segítsen a felhasználóknak tudatosabban kezelni a pénzügyeiket és optimalizálni a kiadásaikat.',
-    coverImage: 'assets/media/',
-    media: [],
+    longDescription: 'Ez az asztali alkalmazás lehetővé teszi a felhasználók számára, hogy nyomon kövessék és elemezzék a költségeiket. A CostCalculator segítségével a felhasználók könnyedén rögzíthetik a kiadásaikat, kategorizálhatják azokat és elemezhetik a pénzügyi helyzetüket. Az alkalmazás célja, hogy segítsen a felhasználóknak tudatosabban kezelni a pénzügyeiket és optimalizálni a kiadásaikat.',
+    coverImage: 'assets/media/costcalculator/costcalculator_title.png',
+    media: [
+      'assets/media/costcalculator/costcalculator_app.png'
+    ],
     github: 'https://github.com/BoBenc/CostCalculator'
   },
   {
@@ -32,8 +34,10 @@ export const PROJECTS = [
     tech: 'Kotlin, Android, Android Studio',
     shortDescription: 'Android alapú alkalmazás, amely a feladatok kezelését és nyomon követését segíti',
     longDescription: 'Ez volt az első Android alkalmazásom, amelyet a Kotlin nyelv és az Android Studio segítségével készítettem. A TaskMaster lehetővé teszi a felhasználók számára, hogy könnyedén létrehozzanak, szerkesszenek és nyomon követhessenek feladatokat. Az alkalmazás célja, hogy javítsa a felhasználók produktivitását és szervezettségét a mindennapi életben. Megpróbáltam a telefon és okosóra közötti szinkronizációt is megvalósítani, hogy a felhasználók minden eszközükön hozzáférhessenek a feladataikhoz.',
-    coverImage: 'assets/media/',
-    media: [],
+    coverImage: 'assets/media/taskmaster/taskmaster_logo.png',
+    media: [
+      'assets/media/taskmaster/taskmaster_app.png'
+    ],
     github: 'https://github.com/BoBenc/TaskMaster'
   },
   {
