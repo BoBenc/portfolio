@@ -110,45 +110,102 @@
     left: 0;
 }
 
-.projects-grid {
+.featured-section {
+    padding: 5rem 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.featured-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.project-card {
-    background-color: var(--card-bg);
-    padding: 2rem;
-    border-radius: 10px;
-    transition: transform 0.3s;
+.featured-card {
+    background: linear-gradient(145deg, #1e293b, #0f172a);
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(56, 189, 248, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    flex-direction: column;
 }
 
-.project-card:hover {
-    transform: translateY(-5px);
+.featured-card:hover {
+    transform: translateY(-12px);
+    border-color: rgba(56, 189, 248, 0.5);
+    box-shadow: 0 20px 40px rgba(56, 189, 248, 0.2);
 }
 
-.project-card h3 {
-    margin-bottom: 1rem;
-}
-
-.project-card p {
-    margin-bottom: 1.5rem;
-    font-size: 0.95rem;
-}
-
-.project-img {
+.card-image-wrapper {
+    position: relative;
     width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-    cursor: pointer;
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    aspect-ratio: 16 / 9;
+    background-color: #0b1120;
+    overflow: hidden;
 }
 
-.project-img:hover {
-    opacity: 0.8;
-    transform: scale(1.02);
+.featured-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: #0f172a; 
+    padding: 1rem; 
+    transition: transform 0.5s ease;
+}
+
+.featured-card:hover .featured-img {
+    transform: scale(1.08);
+}
+
+.featured-card:hover .overlay {
+    opacity: 1;
+}
+
+.featured-card:hover .overlay-btn {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.card-content {
+    padding: 2rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.card-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #f8fafc;
+}
+
+.card-content p {
+    color: #cbd5e1;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.tech-stack {
+    font-family: monospace;
+    color: var(--primary-color, #38bdf8);
+    font-size: 0.9rem;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.card-btn {
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
 }
 
 .btn-small {

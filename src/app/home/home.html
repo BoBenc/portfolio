@@ -2,7 +2,7 @@
     <div class="hero-content">
         <h1>Üdvözlöm, <span class="highlight">Bőgér Bence</span> vagyok.</h1>
         <h2>Mérnökinformatikus (Rendszergazda) <br> Szoftverfejlesztő és -tesztelő</h2>
-        <a routerLink="/" class="btn">Projekteim megtekintése</a>
+        <a routerLink="/projects" class="btn">Projekteim megtekintése</a>
     </div>
 </header>
 
@@ -42,15 +42,37 @@
     </div>
 </section>
 
-<section id="projects" class="section">
-    <h2>Kiemelt Projektek</h2>
-    <div class="projects-grid">
-        <div class="project-card">
-            <img src="" alt="Projekt képe" class="project-img">
-            <h3>GyümiZöli Webshop</h3>
-            <p>Vizsgaprojekt keretében létrehozott webshop.</p>
-            <div class="tech-stack">Angular, Bootstrap, Barion</div>
-            <a routerLink="/" class="btn btn-small outline mt-1">Megtekintés</a>
+<section id="projects" class="section featured-section">
+    <div class="section-header">
+        <h2>Kiemelt Projektek</h2>
+    </div>
+
+    <div class="featured-grid">
+        <div class="featured-card">
+            <div class="card-image-wrapper">
+                <img src="assets/media/gyumizoli_webshop/GyumiZoliWebshop.png" alt="GyümiZöli Webshop" class="featured-img">
+            </div>
+            <div class="card-content">
+                <h3>GyümiZöli Webshop</h3>
+                <p>Vizsgaprojekt keretében létrehozott webshop</p>
+                <div class="tech-stack">Angular, Bootstrap, Barion</div>
+                
+                <a routerLink="/projects/1" class="btn outline card-btn">Megtekintés</a>
+            </div>
         </div>
+
+        <div class="featured-card">
+            <div class="card-image-wrapper">
+                <img src="assets/media/gyumizoliapp/GyumiZoliWebshop.png" alt="GyümiZöli Applikáció" class="featured-img">
+            </div>
+            <div class="card-content">
+                <h3>GyümiZöli Applikáció</h3>
+                <p>Android alapú alkalmazás, amely a GyümiZöli webshophoz kapcsolódik</p>
+                <div class="tech-stack">Kotlin, Android, Android Studio</div>
+                
+                <a routerLink="/projects/5" class="btn outline card-btn">Megtekintés</a>
+            </div>
+        </div>
+
     </div>
 </section>

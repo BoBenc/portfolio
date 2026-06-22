@@ -5,8 +5,15 @@ export const PROJECTS = [
     tech: 'Angular, Bootstrap, Barion',
     shortDescription: 'Vizsgaprojekt keretében létrehozott webshop',
     longDescription: 'Frontend megvalósítását Angular keretrendszerrel készítettem, a Bootstrap segítségével mégjobb dizájn tudtam kialakítani. A webshopban a Barion fizetési rendszert integráltam, amely lehetővé teszi a felhasználók számára, hogy biztonságosan és kényelmesen fizethessenek a termékekért.',
-    coverImage: 'assets/media/',
-    media: [],
+    coverImage: 'assets/media/gyumizoli_webshop/GyumiZoliWebshop.png',
+    media: [
+      'assets/media/gyumizoli_webshop/gyumizoli_webshop_home.png',
+      'assets/media/gyumizoli_webshop/gyumizoli_webshop_categories.png',
+      'assets/media/gyumizoli_webshop/gyumizoli_webshop_product.png',
+      'assets/media/gyumizoli_webshop/gyumizoli_webshop_login.png',
+      'assets/media/gyumizoli_webshop/gyumizoli_webshop_aboutus.png',
+      'assets/media/gyumizoli_webshop/gyumizoli_webshop_barion.png',
+    ],
     github: 'https://github.com/gyumizoli/GyumiZoliWebshop'
   },
   {
@@ -52,8 +59,15 @@ export const PROJECTS = [
     tech: 'Kotlin, Android, Android Studio',
     shortDescription: 'Android alapú alkalmazás, amely a GyümiZöli webshophoz kapcsolódik',
     longDescription: 'Ezt a projektet azért készítettem, hogy a GyümiZöli Webshop vizsgaremekhez kapcsolódóan egy Android alkalmazást is létrehozzak. Az alkalmazás lehetővé teszi a felhasználók számára, hogy könnyedén böngészhessenek a termékek között, hozzáadhassák őket a kosárhoz és egyszerűen leadhassák rendeléseiket. A cél az volt, hogy a webshop élményét mobil eszközökön is elérhetővé tegyem.',
-    coverImage: 'assets/media/',
-    media: [],
+    coverImage: 'assets/media/gyumizoliapp/GyumiZoliWebshop.png',
+    media: [
+      'assets/media/gyumizoliapp/gyumizoli_home.jpg',
+      'assets/media/gyumizoliapp/gyumizoli_categories.jpg',
+      'assets/media/gyumizoliapp/gyumizoli_product.jpg',
+      'assets/media/gyumizoliapp/gyumizoli_login.jpg',
+      'assets/media/gyumizoliapp/gyumizoli_basket.jpg',
+      'assets/media/gyumizoliapp/gyumizoli_shipping_details.jpg'
+    ],
     github: 'https://github.com/BoBenc/GyumiZoliApp'
   },
   {
@@ -62,7 +76,7 @@ export const PROJECTS = [
     tech: 'Blender',
     shortDescription: '3D modell egy kocsiról, amelyet a Blender szoftverrel készítettem',
     longDescription: 'Szerettem volna egy 3D modellt készíteni egy kocsiról, ezért a Blender szoftver segítségével létrehoztam ezt a modellt. A projekt célja az volt, hogy fejlesszem a 3D modellezési készségeimet és megismerjem a Blender különböző eszközeit és funkcióit.',
-    coverImage: 'assets/media/car/',
+    coverImage: 'assets/media/car/car.png',
     media: [
       'assets/media/car/car_animation.mp4',
       'assets/media/car/Car.glb'
