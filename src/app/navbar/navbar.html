@@ -1,1 +1,16 @@
-<p>navbar works!</p>
+<nav class="navbar">
+    <a routerLink="/" class="logo" (click)="closeMenu()">BoBenc<span>_</span></a>
+
+    <div class="menu-toggle" (click)="toggleMenu()" [class.active]="isMenuOpen">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+
+    <ul class="nav-links" [class.active]="isMenuOpen">
+        <li><a routerLink="/" routerLinkActive="active-link" (click)="closeMenu()"></a></li>
+        <li><a routerLink="/" routerLinkActive="active-link" (click)="closeMenu()"></a></li>
+        <li><a routerLink="/" routerLinkActive="active-link" (click)="closeMenu()"></a></li>
+        <li><a routerLink="/" routerLinkActive="active-link" (click)="closeMenu()"></a></li>
+    </ul>
+</nav>
