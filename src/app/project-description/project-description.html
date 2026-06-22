@@ -1,0 +1,62 @@
+<section class="section project-detail-section" *ngIf="currentProject">
+    
+    <div class="detail-header">
+        <a routerLink="/projects" class="back-link">← Vissza a projektekhez</a>
+        <h1>{{ currentProject.title }}</h1>
+    </div>
+
+    <div class="detail-image-container gallery-container" *ngIf="currentProject.media && currentProject.media.length > 0">
+        
+        <button class="slider-btn prev-btn" (click)="prevMedia()" *ngIf="currentProject.media.length > 1">❮</button>
+
+        <ng-container *ngIf="isVideo(currentProject.media[currentMediaIndex])">
+            <video [src]="currentProject.media[currentMediaIndex]" class="detail-main-img" controls autoplay muted loop></video>
+        </ng-container>
+
+        <ng-container *ngIf="is3DModel(currentProject.media[currentMediaIndex])">
+            <model-viewer [attr.src]="currentProject.media[currentMediaIndex]" 
+                          class="detail-main-img" 
+                          auto-rotate 
+                          camera-controls 
+                          shadow-intensity="1">
+            </model-viewer>
+        </ng-container>
+
+        <ng-container *ngIf="!isVideo(currentProject.media[currentMediaIndex]) && !is3DModel(currentProject.media[currentMediaIndex])">
+            <img [src]="currentProject.media[currentMediaIndex]" [alt]="currentProject.title" class="detail-main-img">
+        </ng-container>
+
+        <button class="slider-btn next-btn" (click)="nextMedia()" *ngIf="currentProject.media.length > 1">❯</button>
+
+        <div class="slider-dots" *ngIf="currentProject.media.length > 1">
+            <span class="dot" *ngFor="let item of currentProject.media; let i = index"
+                [class.active]="i === currentMediaIndex"
+                (click)="goToMedia(i)">
+            </span>
+        </div>
+    </div>
+
+    <div class="detail-content">
+        
+        <div class="tech-badges">
+            <span class="badge">⚙️ {{ currentProject.tech }}</span>
+        </div>
+
+        <div class="long-description">
+            <p>{{ currentProject.longDescription }}</p>
+        </div>
+
+        <div class="action-buttons">
+            <a [href]="currentProject.github" target="_blank" class="btn icon-btn">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="github-icon">
+                Kód megtekintése
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<section class="section project-detail-section" *ngIf="!currentProject" style="text-align: center;">
+    <h2>A keresett projekt nem található!</h2>
+    <a routerLink="/projects" class="btn mt-1">Vissza a listához</a>
+</section>
